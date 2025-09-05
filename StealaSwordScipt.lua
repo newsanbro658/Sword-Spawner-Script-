@@ -1,12 +1,3 @@
---[[
-🔓 Open Source Script
-Credits to:
-Shizoscript
-KMAN
-DOZE
-LYNXX
-]]
-
 -- Load Tora Library
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/liebertsx/Tora-Library/main/src/library", true))()
 
@@ -26,7 +17,7 @@ end
 })
 
 weaponFolder:AddButton({
-text = "Spawn Weapon",
+text = "Spawn Sword",
 callback = function()
 local weapon = _G.weaponName or "Sword"
 local remote = game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase")
@@ -56,7 +47,7 @@ bestWeaponFolder:AddButton({
 text = "🔥GET BEST SWORD🔥",
 callback = function()
 local remote = game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("AddWeaponToBase")
-pcall(function() remote:FireServer("Mystic Reaper") end)
+pcall(function() remote:FireServer("Heavens Halberd") end)
 end
 })
 
